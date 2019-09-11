@@ -1,0 +1,32 @@
+
+// .example-card {
+//   margin-top: 20px;
+//   margin-left: 35px;
+//   float: left;
+//   width: 300px;
+//   height: 350px;
+//  };
+//  .div{
+//   max-width: 500px;
+//  }
+//  .integration-title {
+//   text-align: center;
+//  }
+//  .integration-matter {
+//   text-align: center;
+//  }
+.container{
+  display:flex;
+
+}
+.example-card {
+  
+  max-width: 200px;
+  
+}
+
+.example-header-image {
+  background-image: url('../../../assets/img/theme/flyingcar.jpg');
+  background-size: cover;
+  max-height: 200px;
+}
