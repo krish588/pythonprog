@@ -43,18 +43,18 @@ export class AppComponent {
 
     if (st > lastScrollTop && st > navbarHeight) {
 
-      // if (navbar.classList.contains("headroom--pinned")) {
-      //   navbar.classList.remove("headroom--pinned");
-      //   navbar.classList.add("headroom--unpinned");
-      // }
+      if (navbar.classList.contains("headroom--pinned")) {
+        navbar.classList.remove("headroom--pinned");
+        navbar.classList.add("headroom--unpinned");
+      }
 
     } else {
 
       if (st + window.innerHeight < document.body.scrollHeight) {
-        // if (navbar.classList.contains("headroom--unpinned")) {
-        //   navbar.classList.remove("headroom--unpinned");
-        //   navbar.classList.add("headroom--pinned");
-        // }
+        if (navbar.classList.contains("headroom--unpinned")) {
+          navbar.classList.remove("headroom--unpinned");
+          navbar.classList.add("headroom--pinned");
+        }
       }
     }
 
@@ -74,9 +74,9 @@ export class AppComponent {
         this.renderer.listenGlobal("window", "scroll", event => {
           const number = window.scrollY;
           if (number > 150 || window.pageYOffset > 150) {
-            // navbar.classList.add("headroom--not-top");
+            navbar.classList.add("headroom--not-top");
           } else {
-            // navbar.classList.remove("headroom--not-top");
+            navbar.classList.remove("headroom--not-top");
           }
         });
       });

@@ -13,6 +13,87 @@
 
 
 
+      <div class="container">
+        <h2 class="mt-lg mb-5">
+          <span>Ideas</span>
+        </h2>
+        <h3 class="h4 text-success font-weight-bold mb-4">Ongoing Ideas</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <button class="btn btn-block btn-primary mb-3" (click)="open(classic2,'Notification' , '')">
+             Idea
+            </button>
+            <ng-template #classic let-c="close" let-d="dismiss">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h6 class="modal-title" id="modal-title-default">Type your modal title</h6>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal" (click)="c('Close click')">Close</button>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+      
+          <div class="col-md-4">
+            <button class="btn btn-block btn-warning mb-3" (click)="open(classic2, 'Notification', '')">
+               Idea
+            </button>
+            <ng-template #classic2 let-c="close" let-d="dismiss">
+              <div class="modal-content bg-gradient-danger">
+                <div class="modal-header">
+                  <h6 class="modal-title" id="modal-title-notification">Your attention is required</h6>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="d('Cross click')">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="py-3 text-center">
+                    <i class="ni ni-bell-55 ni-3x"></i>
+                    <h4 class="heading mt-4">You should read this!</h4>
+                    <p>Flying car.</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-white">Ok, Got it</button>
+                  <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal" (click)="c('Close click')">Close</button>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+      
+          <div class="col-md-4">
+            <button class="btn btn-block btn-default" (click)="open(classic2, 'Notification', '')">
+               Idea
+            </button>
+            <ng-template #classic1 let-c="close" let-d="dismiss">
+              <div class="modal-content">
+                <div class="modal-body p-0">
+                  <div class="card bg-secondary shadow border-0">
+                    <div class="card-header bg-white pb-5">
+                      <div class="text-muted text-center mb-3">
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="card-body px-lg-5 py-lg-5">
+                      
+             
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
       
         <div class="col text-right">
 
@@ -29,7 +110,7 @@
   </div>
 
 
-  <div class="container-fluid mt--7">
+  <!-- <div class="container-fluid mt--7">
     <div class="row mt-9">
       <div class="col-xl-11 mb-8 mb-xl-0">
         <div class="card shadow">
@@ -93,4 +174,4 @@
 
         </mat-card-actions>
       </mat-card>
-    </div>
+    </div> -->
